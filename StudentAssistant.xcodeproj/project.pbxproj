@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD04947729419D4D002BCBB6 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04947629419D4D002BCBB6 /* AuthenticationModel.swift */; };
+		AD0494792941A307002BCBB6 /* SubjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0494782941A307002BCBB6 /* SubjectTableViewController.swift */; };
+		AD04947B2941A339002BCBB6 /* TutorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04947A2941A339002BCBB6 /* TutorTableViewController.swift */; };
+		AD04947D2941A37C002BCBB6 /* TutorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04947C2941A37C002BCBB6 /* TutorDetailViewController.swift */; };
+		AD04947F2941A433002BCBB6 /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04947E2941A433002BCBB6 /* SubjectTableViewCell.swift */; };
+		AD0494812941A48A002BCBB6 /* TutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0494802941A48A002BCBB6 /* TutorTableViewCell.swift */; };
+		AD0494852941A563002BCBB6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0494842941A563002BCBB6 /* ProfileViewController.swift */; };
+		AD0494872941A76E002BCBB6 /* SubjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0494862941A76E002BCBB6 /* SubjectModel.swift */; };
+		AD04948D2941B70A002BCBB6 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04948C2941B70A002BCBB6 /* NewsTableViewController.swift */; };
+		AD04948F2941B729002BCBB6 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04948E2941B729002BCBB6 /* NewsTableViewCell.swift */; };
+		AD0494932941B929002BCBB6 /* TutorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0494922941B929002BCBB6 /* TutorModel.swift */; };
+		ADA45DEB29419BBA0088B741 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA45DEA29419BBA0088B741 /* LoginViewController.swift */; };
 		ADF749FF2936EF9000977DE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF749FE2936EF9000977DE9 /* AppDelegate.swift */; };
 		ADF74A012936EF9000977DE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF74A002936EF9000977DE9 /* SceneDelegate.swift */; };
 		ADF74A032936EF9000977DE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF74A022936EF9000977DE9 /* ViewController.swift */; };
@@ -36,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD04947629419D4D002BCBB6 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		AD0494782941A307002BCBB6 /* SubjectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewController.swift; sourceTree = "<group>"; };
+		AD04947A2941A339002BCBB6 /* TutorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTableViewController.swift; sourceTree = "<group>"; };
+		AD04947C2941A37C002BCBB6 /* TutorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorDetailViewController.swift; sourceTree = "<group>"; };
+		AD04947E2941A433002BCBB6 /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		AD0494802941A48A002BCBB6 /* TutorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTableViewCell.swift; sourceTree = "<group>"; };
+		AD0494842941A563002BCBB6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AD0494862941A76E002BCBB6 /* SubjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectModel.swift; sourceTree = "<group>"; };
+		AD04948C2941B70A002BCBB6 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		AD04948E2941B729002BCBB6 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		AD0494922941B929002BCBB6 /* TutorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorModel.swift; sourceTree = "<group>"; };
+		ADA45DEA29419BBA0088B741 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADF749FB2936EF9000977DE9 /* StudentAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF749FE2936EF9000977DE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF74A002936EF9000977DE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +126,19 @@
 				ADF749FE2936EF9000977DE9 /* AppDelegate.swift */,
 				ADF74A002936EF9000977DE9 /* SceneDelegate.swift */,
 				ADF74A022936EF9000977DE9 /* ViewController.swift */,
+				AD04947629419D4D002BCBB6 /* AuthenticationModel.swift */,
+				AD04947A2941A339002BCBB6 /* TutorTableViewController.swift */,
+				AD04947E2941A433002BCBB6 /* SubjectTableViewCell.swift */,
+				AD0494802941A48A002BCBB6 /* TutorTableViewCell.swift */,
+				ADA45DEA29419BBA0088B741 /* LoginViewController.swift */,
 				ADF74A042936EF9000977DE9 /* Main.storyboard */,
+				AD04948E2941B729002BCBB6 /* NewsTableViewCell.swift */,
+				AD04948C2941B70A002BCBB6 /* NewsTableViewController.swift */,
+				AD04947C2941A37C002BCBB6 /* TutorDetailViewController.swift */,
+				AD0494862941A76E002BCBB6 /* SubjectModel.swift */,
+				AD0494922941B929002BCBB6 /* TutorModel.swift */,
+				AD0494842941A563002BCBB6 /* ProfileViewController.swift */,
+				AD0494782941A307002BCBB6 /* SubjectTableViewController.swift */,
 				ADF74A072936EF9200977DE9 /* Assets.xcassets */,
 				ADF74A092936EF9200977DE9 /* LaunchScreen.storyboard */,
 				ADF74A0C2936EF9200977DE9 /* Info.plist */,
@@ -258,6 +294,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0494932941B929002BCBB6 /* TutorModel.swift in Sources */,
+				AD0494812941A48A002BCBB6 /* TutorTableViewCell.swift in Sources */,
+				AD04947B2941A339002BCBB6 /* TutorTableViewController.swift in Sources */,
+				AD04948F2941B729002BCBB6 /* NewsTableViewCell.swift in Sources */,
+				AD0494872941A76E002BCBB6 /* SubjectModel.swift in Sources */,
+				AD04947F2941A433002BCBB6 /* SubjectTableViewCell.swift in Sources */,
+				AD0494792941A307002BCBB6 /* SubjectTableViewController.swift in Sources */,
+				AD04947D2941A37C002BCBB6 /* TutorDetailViewController.swift in Sources */,
+				ADA45DEB29419BBA0088B741 /* LoginViewController.swift in Sources */,
+				AD04948D2941B70A002BCBB6 /* NewsTableViewController.swift in Sources */,
+				AD0494852941A563002BCBB6 /* ProfileViewController.swift in Sources */,
+				AD04947729419D4D002BCBB6 /* AuthenticationModel.swift in Sources */,
 				ADF74A032936EF9000977DE9 /* ViewController.swift in Sources */,
 				ADF749FF2936EF9000977DE9 /* AppDelegate.swift in Sources */,
 				ADF74A012936EF9000977DE9 /* SceneDelegate.swift in Sources */,
