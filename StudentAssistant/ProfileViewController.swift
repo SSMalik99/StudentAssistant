@@ -7,12 +7,30 @@
 
 import UIKit
 
+
 class ProfileViewController: UIViewController {
 
+    //outlets
+    @IBOutlet weak var studentName: UILabel!
+    
+    @IBOutlet weak var studentEmail: UILabel!
+    
+    @IBOutlet weak var studentMobile: UIView!
+    
+    @IBOutlet weak var studentMobileLabel: UILabel!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()
+        
+        studentName.text = UserDefaults.standard.string(forKey: Constants().FULL_NAME)
+        
+        studentEmail.text = UserDefaults.standard.string(forKey: Constants().EMAIL)
+        
+        studentMobileLabel.text = UserDefaults.standard.string(forKey: Constants().PHONE)
+        
+        
+       
     }
     
 

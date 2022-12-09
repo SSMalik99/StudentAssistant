@@ -9,6 +9,8 @@ import UIKit
 
 class SubjectTableViewController: UITableViewController {
 
+    var subjectModel = SubjectModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,7 +39,15 @@ class SubjectTableViewController: UITableViewController {
 
         // Configure the cell...
         
-        cell.subjectName.text = SubjectModel().availableSubjects[indexPath.row]
+        cell.subjectName.text = subjectModel.availableSubjects[indexPath.row]
+        
+        // add border and color
+        cell.backgroundColor = UIColor.white
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 8
+        cell.clipsToBounds = true
+        
         
         return cell
     }
@@ -86,8 +96,15 @@ class SubjectTableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-//        let whichCell = sender as! SubjectTableViewCell
-//        let destinationView = segue.destination as! TutorTableViewController
+        // get the view cell
+        let whichCell = sender as! SubjectTableViewCell
+        
+//        get new view controller
+        let destinationView = segue.destination as! TutorTableViewController
+        
+        // set value of the new view properties
+        destinationView.selectedSubject = whichCell.subjectName.text!
+        
         
        
     }

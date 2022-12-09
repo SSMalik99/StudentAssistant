@@ -8,7 +8,16 @@
 import UIKit
 
 class NewsTableViewCell: UITableViewCell {
+    
+    //class variable
+    var readMoreUrl = ""
 
+    // outlets
+    @IBOutlet weak var articleImage: UIImageView!
+    
+    @IBOutlet weak var articleTitle: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,6 +9,9 @@ import UIKit
 
 class SubjectTableViewCell: UITableViewCell {
    
+    
+    @IBOutlet weak var subjectName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,8 +22,11 @@ class SubjectTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBOutlet weak var subjectName: UILabel!
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+//        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0))
+    }
     
     
 }

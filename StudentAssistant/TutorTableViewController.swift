@@ -8,6 +8,15 @@
 import UIKit
 
 class TutorTableViewController: UITableViewController {
+    
+    var tutorModel = TutorModel()
+    
+    var selectedSubject = ""
+    
+    func getTeacherList () -> Array<String>{
+        
+        return tutorModel.teachersForSubject[selectedSubject] as! Array<String>
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +40,29 @@ class TutorTableViewController: UITableViewController {
         
 //        we need to change accoding to the subject teachers
         
-        return TutorModel().teachersForSubject.count
+        let tutorList = getTeacherList()
+        
+        return tutorList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherList", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherList", for: indexPath) as! TutorTableViewCell
 
         // Configure the cell...
+        cell.teacherName.text = getTeacherList()[indexPath.row]
+        
+//        cell.backgroundColor = UIColor.white
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 8
+        cell.clipsToBounds = true
+        
+//        cell.tag = cell.teacherName.text?.split(separator: " ").joined(separator: "_")
+        
+        
+        
+
 
         return cell
     }
@@ -79,14 +103,25 @@ class TutorTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        // get the view cell
+        let whichCell = sender as! TutorTableViewCell
+        
+//        get new view controller
+        let destinationView = segue.destination as! TutorDetailViewController
+        
+        // set value of the new view properties
+//        destinationView.selectedSubject = whichCell.subjectName.text!
+        destinationView.selectedTeacherTag = (whichCell.teacherName.text?.split(separator: " ").joined(separator: "_"))! 
+        
     }
-    */
+    
 
 }
